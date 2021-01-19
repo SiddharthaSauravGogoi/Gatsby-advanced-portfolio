@@ -1,0 +1,22 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 64px;
+  height: 64px;
+  box-shadow: 1px -2px 2px 2px grey;
+}
+h2 {
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  padding-inline-start: 0;
+}
+
+li {
+  list-style-type: none;
+  padding: 8px;
+  cursor: pointer;
+}
