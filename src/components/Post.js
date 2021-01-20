@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import Img from 'gatsby-image';
 
-const Post = ({ title, author, path, date, body }) => {
+const Post = ({ title, author, path, date, body, fluid }) => {
   return (
     <div className="post">
+      <Img fluid={fluid} />
       <h3>{title}</h3>
       <div className="post-detail">
         <div>{date}</div>
