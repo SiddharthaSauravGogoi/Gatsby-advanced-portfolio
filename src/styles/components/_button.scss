@@ -1,0 +1,17 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  background: #f7f7f7;
+  border: 1px solid gray;
+  text-transform: uppercase;
+  color: black;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.read-more {
+  width: 125px;
+  font-size: 0.85rem;
+}
