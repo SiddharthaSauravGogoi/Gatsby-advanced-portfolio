@@ -1,6 +1,5 @@
 import React from 'react';
-import window from 'global';
-import { graphql, StaticQuery, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faGithub, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
@@ -19,7 +18,7 @@ export default function Sidebar() {
           <FontAwesomeIcon icon={faTwitter} />
         </div>
       </div>
-      { window.location.pathname.length === 1 ?
+      {/* { window.location.pathname.length === 1 ?
         <div className="sidebar-card recent-posts">
           <p className="sidebar-card-title"> Recent Posts </p>
           <StaticQuery query={sidebarQuery}
@@ -35,35 +34,35 @@ export default function Sidebar() {
               </div>
             )}
           />
-        </div> : null}
+        </div> : null} */}
     </aside>
   )
 }
 
-const sidebarQuery = graphql`
-  query sidebarQuery{
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: 3
-    ) {
-      edges{
-        node{
-          id
-          frontmatter{
-            title
-            image{
-              childImageSharp{
-                fluid(maxWidth: 200){
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-          fields{
-            slug
-          }
-        }
-      }
-    }
-  }
-`
+// const sidebarQuery = graphql`
+//   query sidebarQuery{
+//     allMarkdownRemark(
+//       sort: { fields: [frontmatter___date], order: DESC }
+//       limit: 3
+//     ) {
+//       edges{
+//         node{
+//           id
+//           frontmatter{
+//             title
+//             image{
+//               childImageSharp{
+//                 fluid(maxWidth: 200){
+//                   ...GatsbyImageSharpFluid
+//                 }
+//               }
+//             }
+//           }
+//           fields{
+//             slug
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
