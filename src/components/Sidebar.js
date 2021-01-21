@@ -1,12 +1,21 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faGithub, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
+
 
 export default function Sidebar() {
   return (
     <aside>
       <div className="sidebar-card">
-        <img src="https://media-exp1.licdn.com/dms/image/C5103AQHjwQKKEz4IXA/profile-displayphoto-shrink_200_200/0/1579371137175?e=1616630400&v=beta&t=AntsP8wPgjHHeP7SRbZTVGKa6e5tJToJHIfpwH5iVKM" alt="author" />
+        <img src="https://avatars.githubusercontent.com/u/7467425?s=460&u=62a82d8c83564343d45c68635ffc515ee097841e&v=4" alt="author" />
         <p className="sidebar-card-title author"> Siddhartha Saurav Gogoi </p>
+        <div className="social-icons-wrapper">
+          <FontAwesomeIcon icon={faFacebookF} />
+          <FontAwesomeIcon icon={faGithub} />
+          <FontAwesomeIcon icon={faLinkedinIn} />
+          <FontAwesomeIcon icon={faTwitter} />
+        </div>
       </div>
       <div className="sidebar-card recent-posts">
         <p className="sidebar-card-title"> Recent Posts </p>

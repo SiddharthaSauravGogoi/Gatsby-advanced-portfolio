@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;600;700&display=swap");
 * {
-  font-family: "Lato", sans-serif;
+  font-family: "Mulish", sans-serif;
   box-sizing: border-box; }
 
 h1,
@@ -53,6 +54,9 @@ aside {
 .post-desc {
   padding: 8px 16px; }
 
+.post-content {
+  margin: 1em 0em; }
+
 .sidebar-card {
   display: flex;
   flex-direction: column;
@@ -62,16 +66,26 @@ aside {
   width: 75%;
   margin-bottom: 2%; }
 
+.sidebar-card img {
+  width: 100%; }
+
 .sidebar-card .sidebar-card {
   width: 100%;
   align-items: flex-start; }
 
 .sidebar-card-title {
   font-weight: 500;
-  font-size: 1.125rem; }
+  font-size: 1.125rem;
+  margin: 1em; }
 
 .recent-posts {
   align-items: flex-start;
+  padding: 1em; }
+
+.social-icons-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
   padding: 1em; }
 
 nav {

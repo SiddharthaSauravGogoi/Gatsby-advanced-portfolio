@@ -20,7 +20,9 @@ export default function SinglePost({ data }) {
               <div>{post.date}</div>
               <div className="author">&nbsp; by &nbsp; {post.author}</div>
             </div>
-            <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.fields.slug }} />
+            <div
+              className="post-content"
+              dangerouslySetInnerHTML={{ __html: data.markdownRemark.excerpt }} />
             <div className="post-overview-wrapper">
               <ul className="tags-list">
                 {post.tags.map(tag => <li key={tag}>
@@ -58,6 +60,7 @@ export const postQuery = graphql`
           }
         }
       }
+      excerpt
       fields{
         slug
       }

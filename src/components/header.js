@@ -1,17 +1,19 @@
-import PropTypes from "prop-types"
-import React from "react"
+import React from 'react';
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
 
 const Header = ({ siteTitle }) => (
   <header
   >
     <nav>
-      <h2>
-        {siteTitle}
-      </h2>
+      <Link to="/">
+        <h2>
+          {siteTitle}
+        </h2>
+      </Link>
       <ul>
         <li> Portfolio </li>
-        <li> Tags </li>
-        <li> About Me</li>
+        <li> Contact </li>
       </ul>
     </nav>
   </header>
