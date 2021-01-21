@@ -22,7 +22,7 @@ export default function SinglePost({ data }) {
             </div>
             <div
               className="post-content"
-              dangerouslySetInnerHTML={{ __html: data.markdownRemark.excerpt }} />
+              dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
             <div className="post-overview-wrapper">
               <ul className="tags-list">
                 {post.tags.map(tag => <li key={tag}>

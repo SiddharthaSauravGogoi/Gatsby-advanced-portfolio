@@ -1,5 +1,5 @@
 .post-detail {
-  display: flex;
+  @include display-flex;
 }
 
 .excerpt {
@@ -7,7 +7,7 @@
 }
 
 .tags-list {
-  display: flex;
+  @include display-flex;
 }
 
 .post-desc {

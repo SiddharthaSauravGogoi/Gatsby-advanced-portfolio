@@ -1,6 +1,5 @@
 .post {
-  display: flex;
-  flex-direction: column;
+  @include display-flex-col;
   background-color: #fefefe;
   border-radius: 3px;
   margin-bottom: 1%;
@@ -8,9 +7,7 @@
 
 .post-overview-wrapper {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include space-between-center;
 }
 
 .post-link {

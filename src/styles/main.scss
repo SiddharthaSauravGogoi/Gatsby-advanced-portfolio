@@ -1,3 +1,5 @@
+@import "mixins/mixins";
+
 @import "utils/reset";
 @import "utils/layout";
 
@@ -8,3 +10,5 @@
 @import "components/button";
 @import "components/posts";
 @import "components/tags";
+
+@import "mediaqueries/mobile";

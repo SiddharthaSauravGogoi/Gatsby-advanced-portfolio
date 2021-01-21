@@ -1,8 +1,6 @@
 .sidebar-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include center;
+  @include flex-direction-col;
   background-color: #fefefe;
   width: 75%;
   margin-bottom: 2%;

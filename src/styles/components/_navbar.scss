@@ -1,7 +1,5 @@
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include space-between-center;
   padding: 0px 64px;
   height: 64px;
   box-shadow: 1px -2px 2px 2px grey;
@@ -11,7 +9,7 @@ h2 {
 }
 
 nav ul {
-  display: flex;
+  @include display-flex;
   padding-inline-start: 0;
 }
 
