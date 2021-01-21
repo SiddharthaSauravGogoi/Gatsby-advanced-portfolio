@@ -5,6 +5,7 @@ import { faFacebookF, faGithub, faLinkedinIn, faTwitter } from '@fortawesome/fre
 
 
 export default function Sidebar() {
+
   return (
     <aside>
       <div className="sidebar-card">
@@ -17,23 +18,23 @@ export default function Sidebar() {
           <FontAwesomeIcon icon={faTwitter} />
         </div>
       </div>
-      <div className="sidebar-card recent-posts">
-        <p className="sidebar-card-title"> Recent Posts </p>
-        <StaticQuery query={sidebarQuery}
-          render={(data) => (
-            <div>
-              {data.allMarkdownRemark.edges.map(({ node }) => (
-                <div className="sidebar-card" key={node.id}>
-                  <Link to={node.fields.slug} className="post-link">
-                    <p> {node.frontmatter.title} </p>
-                  </Link>
-                </div>
-              ))}
-            </div>
-          )}
-        />
-
-      </div>
+      { window.location.pathname.length === 1 ?
+        <div className="sidebar-card recent-posts">
+          <p className="sidebar-card-title"> Recent Posts </p>
+          <StaticQuery query={sidebarQuery}
+            render={(data) => (
+              <div>
+                {data.allMarkdownRemark.edges.map(({ node }) => (
+                  <div className="sidebar-card" key={node.id}>
+                    <Link to={node.fields.slug} className="post-link">
+                      <p> {node.frontmatter.title} </p>
+                    </Link>
+                  </div>
+                ))}
+              </div>
+            )}
+          />
+        </div> : null}
     </aside>
   )
 }
