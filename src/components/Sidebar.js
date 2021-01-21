@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, StaticQuery, Link } from 'gatsby';
+import { graphql, StaticQuery } from 'gatsby';
 
 export default function Sidebar() {
   return (
@@ -15,9 +15,9 @@ export default function Sidebar() {
             <div>
               {data.allMarkdownRemark.edges.map(({ node }) => (
                 <div className="sidebar-card" key={node.id}>
-                  <Link to={node.frontmatter.path} className="post-link">
+                  <a href={node.fields.slug} className="post-link">
                     <p> {node.frontmatter.title} </p>
-                  </Link>
+                  </a>
                 </div>
               ))}
             </div>
@@ -40,7 +40,6 @@ const sidebarQuery = graphql`
           id
           frontmatter{
             title
-            path
             image{
               childImageSharp{
                 fluid(maxWidth: 200){
@@ -48,6 +47,9 @@ const sidebarQuery = graphql`
                 }
               }
             }
+          }
+          fields{
+            slug
           }
         }
       }
