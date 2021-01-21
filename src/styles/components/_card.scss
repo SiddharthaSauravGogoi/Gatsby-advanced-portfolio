@@ -1,0 +1,23 @@
+.sidebar-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fefefe;
+  width: 75%;
+  margin-bottom: 2%;
+  .sidebar-card {
+    width: 100%;
+    align-items: flex-start;
+  }
+}
+
+.sidebar-card-title {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.recent-posts {
+  align-items: flex-start;
+  padding: 1em;
+}

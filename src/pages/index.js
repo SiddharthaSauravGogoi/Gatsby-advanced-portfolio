@@ -3,18 +3,20 @@ import { graphql, StaticQuery } from "gatsby"
 import Post from "../components/Post";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Sidebar from "../components/Sidebar";
 import "../styles/main.css";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <main>
-
       <StaticQuery query={indexQuery} render={data => {
         return (
           <>
             {data.allMarkdownRemark.edges.map(({ node }) => (
-              <Post title={node.frontmatter.title}
+              <Post
+                key={node.id}
+                title={node.frontmatter.title}
                 author={node.frontmatter.author}
                 path={node.frontmatter.path}
                 date={node.frontmatter.date}
@@ -25,10 +27,7 @@ const IndexPage = () => (
         )
       }} />
     </main>
-
-    <aside>
-      aloha
-    </aside>
+    <Sidebar />
   </Layout>
 )
 
