@@ -1,4 +1,5 @@
 import React from 'react';
+import window from 'global';
 import { graphql, StaticQuery, Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faGithub, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
