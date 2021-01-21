@@ -113,19 +113,20 @@ nav ul li {
   justify-content: center;
   align-items: center;
   padding: 8px;
-  background: #f7f7f7;
-  border: 1px solid gray;
+  border: 1px solid #f0f0f0;
   text-transform: uppercase;
   color: black;
   border-radius: 3px;
   cursor: pointer; }
+
+.btn:hover {
+  border: 1px solid #d1d1d1; }
 
 .read-more {
   width: 125px;
   font-size: 0.85rem; }
 
 .post {
-  border: 1px solid grey;
   display: flex;
   flex-direction: column;
   background-color: #fefefe;

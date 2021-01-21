@@ -3,12 +3,14 @@
   justify-content: center;
   align-items: center;
   padding: 8px;
-  background: #f7f7f7;
-  border: 1px solid gray;
+  border: 1px solid rgb(240, 240, 240);
   text-transform: uppercase;
   color: black;
   border-radius: 3px;
   cursor: pointer;
+  &:hover {
+    border: 1px solid rgb(209, 209, 209);
+  }
 }
 
 .read-more {

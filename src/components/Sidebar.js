@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, StaticQuery } from 'gatsby';
+import { graphql, StaticQuery, Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faGithub, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
@@ -24,9 +24,9 @@ export default function Sidebar() {
             <div>
               {data.allMarkdownRemark.edges.map(({ node }) => (
                 <div className="sidebar-card" key={node.id}>
-                  <a href={node.fields.slug} className="post-link">
+                  <Link to={node.fields.slug} className="post-link">
                     <p> {node.frontmatter.title} </p>
-                  </a>
+                  </Link>
                 </div>
               ))}
             </div>
