@@ -26,7 +26,7 @@ This blog will be deleted soon. If you happen to see it, then you might have stu
 
 ```javascript
 function niceTry() {
-  const lolwa = `never again`
-  return lolwa
+  const testVar = `never again`
+  return testVar
 }
 ```

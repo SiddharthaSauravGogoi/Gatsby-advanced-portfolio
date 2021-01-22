@@ -12,7 +12,7 @@ export default function SinglePost({ data, pageContext }) {
 
   const post = data.markdownRemark.frontmatter;
 
-  const disqusAlias = `Siddhartha`;
+  const disqusAlias = `siddharthasauravgogoi`;
 
   const discusConfig = {
     identifier: data.markdownRemark.id,
