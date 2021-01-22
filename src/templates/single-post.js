@@ -5,9 +5,22 @@ import Sidebar from "../components/Sidebar";
 import SEO from '../components/seo';
 import Img from 'gatsby-image';
 import { slugify } from '../util/utilityFunctions';
+import { DiscussionEmbed } from 'disqus-react';
 
-export default function SinglePost({ data }) {
-  const post = data.markdownRemark.frontmatter
+export default function SinglePost({ data, pageContext }) {
+
+
+  const post = data.markdownRemark.frontmatter;
+
+  const disqusAlias = `Siddhartha`;
+
+  const discusConfig = {
+    identifier: data.markdownRemark.id,
+    title: post.title,
+    url: `https://siddharthasauravgogoi.in/${pageContext.slug}`
+  }
+
+
   return (
     <Layout>
       <main>
@@ -32,8 +45,9 @@ export default function SinglePost({ data }) {
             </div>
           </div>
         </div>
-      </main>
+        <DiscussionEmbed shortname={disqusAlias} config={discusConfig} />
 
+      </main>
 
       <Sidebar />
 

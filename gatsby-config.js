@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Blog`,
-    description: `Blog geared towards deep tech topics.`,
+    title: `Siddhartha Saurav Gogoi`,
+    description: `A tech blog that's geared towards deep tech software development topics.`,
     author: `@SiddharthaSauravGogoi`,
   },
   plugins: [
