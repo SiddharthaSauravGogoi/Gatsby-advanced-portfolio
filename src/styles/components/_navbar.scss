@@ -13,8 +13,16 @@ nav ul {
   padding-inline-start: 0;
 }
 
-nav ul li {
+nav ul a {
   list-style-type: none;
   padding: 8px;
   cursor: pointer;
+}
+
+header {
+  background-color: #f5f5f5;
+}
+
+a {
+  color: black;
 }

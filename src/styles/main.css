@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap");
 * {
   font-family: "Mulish", sans-serif;
+  font-family: "Gowun Batang", serif;
   box-sizing: border-box; }
 
 h1,
@@ -29,11 +30,12 @@ li {
   padding: 0px 64px;
   background-color: #f5f5f5; }
 
-content {
+.content {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 1% 0%; }
+  padding: 1% 0%;
+  height: 100%; }
 
 main {
   width: 60%; }
@@ -51,10 +53,27 @@ aside {
   display: flex; }
 
 .post-desc {
-  padding: 8px 16px; }
+  padding: 1rem; }
 
 .post-content {
   margin: 1em 0em; }
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh;
+  width: 100%;
+  margin-top: 3rem; }
+
+.intro h1 {
+  font-family: "Gowun Batang", serif; }
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 700; }
 
 .sidebar-card {
   display: flex;
@@ -102,10 +121,16 @@ nav ul {
   display: flex;
   padding-inline-start: 0; }
 
-nav ul li {
+nav ul a {
   list-style-type: none;
   padding: 8px;
   cursor: pointer; }
+
+header {
+  background-color: #f5f5f5; }
+
+a {
+  color: black; }
 
 .btn {
   display: flex;
@@ -129,9 +154,9 @@ nav ul li {
 .post {
   display: flex;
   flex-direction: column;
-  background-color: #fefefe;
   border-radius: 3px;
-  margin-bottom: 1%; }
+  margin-bottom: 1rem;
+  box-shadow: 0px 20px 40px RGB(0 0 0/20%); }
 
 .post-overview-wrapper {
   width: 100%;
@@ -144,6 +169,9 @@ nav ul li {
 
 h3 {
   margin: 1% 0%; }
+
+.gatsby-image-wrapper {
+  height: 100%; }
 
 .tag {
   padding: 4px;

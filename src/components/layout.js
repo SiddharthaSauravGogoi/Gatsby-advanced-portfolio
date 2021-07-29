@@ -15,11 +15,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={`BLOG`} />
+      <Header siteTitle={`SSG`} />
       <div
         className="container"
       >
-        <content>{children}</content>
+        <div className="content">{children}</div>
       </div>
     </>
   )

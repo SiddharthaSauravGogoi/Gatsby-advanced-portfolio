@@ -1,0 +1,16 @@
+.intro {
+  @include column-center;
+  height: 50vh;
+  width: 100%;
+  margin-top: 3rem;
+
+  h1 {
+    font-family: "Gowun Batang", serif;
+  }
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}

@@ -1,8 +1,8 @@
 .post {
   @include display-flex-col;
-  background-color: #fefefe;
   border-radius: 3px;
-  margin-bottom: 1%;
+  margin-bottom: 1rem;
+  box-shadow: 0px 20px 40px RGB(0 0 0 / 20%);
 }
 
 .post-overview-wrapper {
@@ -16,4 +16,8 @@
 
 h3 {
   margin: 1% 0%;
+}
+
+.gatsby-image-wrapper {
+  height: 100%;
 }

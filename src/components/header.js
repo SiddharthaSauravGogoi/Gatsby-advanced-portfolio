@@ -12,8 +12,7 @@ const Header = ({ siteTitle }) => (
         </h2>
       </Link>
       <ul>
-        <li> Portfolio </li>
-        <li> Contact </li>
+        <Link to="/blog"> BLOG </Link>
       </ul>
     </nav>
   </header>

@@ -11,8 +11,8 @@ const Post = ({ title, author, slug, date, body, fluid, tags }) => {
         <h3>{title}</h3>
         <div className="post-detail">
           <div>{date}</div>
-        &nbsp; by
-        <div className="author">&nbsp; {author}</div>
+          &nbsp; by
+          <div className="author">&nbsp; {author}</div>
         </div>
         <div className="excerpt"> {body} </div>
         <div className="post-overview-wrapper">
@@ -21,7 +21,7 @@ const Post = ({ title, author, slug, date, body, fluid, tags }) => {
               <Link to={`/tag/${slugify(tag)}`} className="tag"> {tag} </Link>
             </li>)}
           </ul>
-          <Link to={slug} className="btn read-more"> Read More</Link>
+          <Link to={`/${slug}`} className="btn read-more"> Read More</Link>
         </div>
       </div>
 
